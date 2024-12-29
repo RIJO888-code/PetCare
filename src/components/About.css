@@ -1,0 +1,123 @@
+.about-container {
+  padding: 50px;
+  background-color: #f0f4f8; /* Light, pleasant background */
+  font-family: 'Arial', sans-serif;
+}
+
+.image-slider {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.slider-image {
+  width: 80%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.left {
+  left: 10px;
+}
+
+.right {
+  right: 10px;
+}
+
+.about-text {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.explore-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.explore-btn:hover {
+  background-color: #45a049;
+}
+
+.vision-mission-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.vision-section, .mission-section {
+  width: 45%;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.vision-section h2, .mission-section h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.vision-section p, .mission-section p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Add an outline effect on the sections for visual appeal */
+.vision-section, .mission-section {
+  border: 2px solid #e0e0e0;
+}
+
+@media (max-width: 768px) {
+  .vision-mission-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .vision-section, .mission-section {
+    width: 80%;
+  }
+}

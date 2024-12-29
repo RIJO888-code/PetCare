@@ -1,0 +1,153 @@
+.health-page-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #fef9e7; 
+    color: #333; 
+  }
+ 
+  .book-appointment-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .book-appointment-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .book-appointment-link a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .contact-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  
+
+
+  .health-header h1 {
+    font-size: 3rem;
+    color: #ff6f61;
+    text-align: center;
+  }
+  
+  .health-header p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 10px;
+    color: #555;
+  }
+  
+  .guidelines-container {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e3f2fd; 
+    border-radius: 8px;
+  }
+  
+  .guidelines-container h2 {
+    color: #0288d1;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .guidelines-container ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .guidelines-container li {
+    margin: 5px 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .services-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px auto;
+  }
+  
+  .service-card {
+    background: linear-gradient(to bottom right, #ffcc80, #ffab40);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 45%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .service-card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  .contact-form {
+    margin: 30px auto;
+    background-color: #f8bbd0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form h2 {
+    color: #d81b60;
+    text-align: center;
+  }
+  
+  .contact-form input,
+  .contact-form button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .contact-form button {
+    background-color: #4caf50; 
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .contact-form button:hover {
+    background-color: #388e3c; 
+    cursor: pointer;
+  }
+  
+  .confirmation-box {
+    margin-top: 20px;
+    background-color: #c8e6c9; 
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1rem;
+    color: #2e7d32;
+  }
+  

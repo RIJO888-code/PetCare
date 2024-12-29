@@ -1,0 +1,247 @@
+
+.footer {
+    background-color: #34495e; 
+    padding: 40px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 50px; 
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    gap: 50px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .footer-column h4 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #f39c12; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  .footer-column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-column ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-column ul li:hover {
+    color: #f39c12; 
+  }
+  
+  .footer-column ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-column ul li a:hover {
+    color: #f39c12; 
+  }
+  
+
+  .footer-content {
+    animation: fadeIn 2s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .footer .footer-column a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .footer-column a:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer .footer-column ul li a:active {
+    transform: scale(0.9);
+  }
+  
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-column {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  }
+  
+
+  .rating-container {
+    padding: 50px;
+    background: #f3f6f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .rating-box {
+    position: relative;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    animation: glowing-border 2s infinite linear;
+  }
+  
+  @keyframes glowing-border {
+    0% {
+      border-color: #3498db;
+      box-shadow: 0 0 15px #3498db;
+    }
+    50% {
+      border-color: #f39c12;
+      box-shadow: 0 0 15px #f39c12;
+    }
+    100% {
+      border-color: #e74c3c;
+      box-shadow: 0 0 15px #e74c3c;
+    }
+  }
+  
+  .rating-heading {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-family: 'Arial', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .rating-stars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .star {
+    font-size: 2rem;
+    color: #ddd;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .star.filled {
+    color: #f39c12;
+  }
+  
+  .star:hover {
+    color: #f39c12;
+  }
+  
+  .feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+  
+  .feedback-form input,
+  .feedback-form textarea {
+    padding: 12px;
+    width: 300px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border 0.3s ease, transform 0.3s ease;
+  }
+  
+  .feedback-form input:focus,
+  .feedback-form textarea:focus {
+    border: 1px solid #f39c12;
+  }
+  
+  .feedback-form input:focus,
+  .feedback-form textarea:focus {
+    transform: scale(1.05);
+  }
+  
+  .feedback-form button {
+    padding: 12px 20px;
+    background-color: #3498db;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .feedback-form button:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+  }
+  
+  .feedback-form button:active {
+    transform: scale(0.95);
+  }
+  
+  .rating-container {
+    background: linear-gradient(135deg, rgba(230, 240, 250, 0.9), rgba(200, 230, 255, 0.8));
+  }
+  
+  @media (max-width: 768px) {
+    .rating-container {
+      padding: 20px;
+    }
+  
+    .feedback-form input,
+    .feedback-form textarea {
+      width: 100%;
+    }
+  }
+  .copyright-footer {
+ 
+    color: yellow; 
+    text-align: center; 
+   
+    font-family: 'Arial', sans-serif; 
+    font-size: 16px; 
+    letter-spacing: 1px; 
+  }
+  .copyright-footer:hover {
+    background-color: #222; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }

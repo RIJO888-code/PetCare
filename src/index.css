@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global Styles */
+
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87); /* Adjust for light mode */
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @apply bg-gray-50 text-gray-900;
+}
+
+a {
+  font-weight: 500;
+  color: #9a64ff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #f2b853;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  @apply rounded-lg px-4 py-2 font-medium border border-transparent transition-all;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  @apply outline-none ring-2 ring-offset-2 ring-blue-500;
+}
+
+/* Dark Mode */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #333333;
+  }
+}
+
+/* Tailwind Layers */
+@layer base {
+  :root {
+    --background: #ffffff;
+    --foreground: #000000;
+    --card: #f9f9f9;
+    --primary: #1a1a1a;
+    --secondary: #646cff;
+  }
+
+  .dark {
+    --background: #242424;
+    --foreground: #ffffff;
+    --card: #333333;
+    --primary: #ffffff;
+    --secondary: #747bff;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  * {
+    @apply border-gray-300;
+  }
+}

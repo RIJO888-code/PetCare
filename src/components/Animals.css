@@ -1,0 +1,87 @@
+.animals-container {
+    padding: 50px;
+    background-color: #f0f4f8; /* Light background color */
+  }
+  
+  .animals-section {
+    background-color: #4CAF50; /* Green background */
+    color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .animals-section h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .animals-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .animal-card {
+    background-color: #ffffff;
+    width: 220px;
+    height: 280px;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .animal-card:hover {
+    transform: scale(1.05); /* Slightly enlarge the card on hover */
+    box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
+    opacity: 0.9; /* Add some transparency to the card */
+  }
+  
+  .animal-image {
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .animal-card:hover .animal-image {
+    transform: scale(1.1); /* Slight zoom effect on the image */
+  }
+  
+  .animal-card h3 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .animal-card:hover h3 {
+    color: #FF6F61; /* Change text color on hover */
+  }
+  
+  .contact-info {
+    margin-top: 30px;
+    text-align: center;
+  }
+  
+  .email-btn {
+    display: inline-block;
+    background-color: #FF6F61;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .email-btn:hover {
+    background-color: #ff3b2b;
+  }
+  
